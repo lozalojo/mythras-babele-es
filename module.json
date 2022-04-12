@@ -1,0 +1,31 @@
+{
+  "name": "fvtt-module-mythras-es",
+  "title": "Mythras - Español/Spanish",
+  "description": "Traducción del sistema Mythras (tpaoloni/mythras) al español  -  Mythras spanish translation",
+  "version": "0.21.1",
+  "minimumCoreVersion" : "9.238",
+  "compatibleCoreVersion":"9.266",
+  "author": "José E. Lozano (Viriato139ac), Eldarc",
+  "esmodules": ["mythras-es-register.js"],
+  "scripts": [],
+  "styles": [],
+  "dependencies": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "system": "mythras",
+  "systemVersion": "0.2.1",
+  "url": "https://github.com/lozalojo/fvtt-module-mythras-es",
+  "manifest": "https://raw.githubusercontent.com/lozalojo/fvtt-module-mythras-es/master/module.json",
+  "download": "https://github.com/lozalojo/fvtt-module-mythras-es/archive/master.zip"
+}
