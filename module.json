@@ -2,7 +2,7 @@
   "id": "fvtt-module-mythras-es",
   "title": "Translation: Spanish [Mythras]",
   "description": "Traducción del sistema Mythras (tpaoloni/mythras) al español  -  Mythras spanish translation",
-  "version": "0.21.2",
+  "version": "2.23.1",
   "compatibility": {
     "minimum": "11",
     "verified": "11.315"
@@ -47,7 +47,7 @@
     "systems": [{
         "id": "mythras",
         "type": "system",
-        "compatibility": "0.2.1"
+        "compatibility": "2.2.3"
       }
     ],
     "requires": [{
