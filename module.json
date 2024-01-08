@@ -1,31 +1,63 @@
 {
-  "name": "fvtt-module-mythras-es",
-  "title": "Mythras - Español/Spanish",
+  "id": "fvtt-module-mythras-es",
+  "title": "Translation: Spanish [Mythras]",
   "description": "Traducción del sistema Mythras (tpaoloni/mythras) al español  -  Mythras spanish translation",
-  "version": "0.21.1",
-  "minimumCoreVersion" : "9.238",
-  "compatibleCoreVersion":"9.266",
-  "author": "José E. Lozano (Viriato139ac), Eldarc",
-  "esmodules": ["mythras-es-register.js"],
-  "scripts": [],
-  "styles": [],
-  "dependencies": [],
-  "packs": [],
-  "languages": [
-    {
+  "version": "0.21.2",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11.315"
+  },
+  "languages": [{
       "lang": "es",
       "name": "Español",
-      "path": "lang/es.json"
-    },
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/es.json",
+      "flags": {}
     }
   ],
-  "system": "mythras",
-  "systemVersion": "0.2.1",
-  "url": "https://github.com/lozalojo/fvtt-module-mythras-es",
-  "manifest": "https://raw.githubusercontent.com/lozalojo/fvtt-module-mythras-es/master/module.json",
-  "download": "https://github.com/lozalojo/fvtt-module-mythras-es/archive/master.zip"
+  "packFolders": [{
+      "name": "Compendios en español",
+      "sorting": "a",
+      "color": "#b95050",
+      "packs": ["brp-armor-es"]
+    }
+  ],
+  "packs": [{
+      "name": "brp-armor-es",
+      "label": "Armaduras",
+      "system": "brp",
+      "path": "packs/brp-armor-es.db",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-brp-es",
+      "absPath": "packs/brp-armor-es.db"
+    }
+  ],
+  "url": "https://github.com/lozanoje/fvtt-module-mythras-es",
+  "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-mythras-es/master/module.json",
+  "download": "https://github.com/lozanoje/fvtt-module-mythras-es/archive/master.zip",
+  "authors": [{
+      "name": "Viriato139ac",
+      "discord": "@Viriato139ac#0342"
+    }, {
+      "name": "Eldarc"
+    }
+  ],
+  "relationships": {
+    "systems": [{
+        "id": "mythras",
+        "type": "system",
+        "compatibility": "0.2.1"
+      }
+    ],
+    "requires": [{
+        "id": "foundryvtt-es",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": [
+    "fvtt-module-mythras-es.js"
+  ]
 }
