@@ -2,10 +2,10 @@
   "id": "fvtt-module-mythras-es",
   "title": "Translation: Spanish [Mythras]",
   "description": "Traducción del sistema Mythras (tpaoloni/mythras) al español  -  Mythras spanish translation",
-  "version": "2.23.1",
+  "version": "2.25.2",
   "compatibility": {
     "minimum": "11",
-    "verified": "11.315"
+        "verified": "11"
   },
   "languages": [{
       "lang": "es",
@@ -15,22 +15,33 @@
     }
   ],
   "packFolders": [{
-      "name": "Compendios en español",
+      "name": "Mythras | español",
       "sorting": "a",
       "color": "#b95050",
-      "packs": ["brp-armor-es"]
+      "packs": ["standardSkill-es","professionalSkill-es","humanoidHitLocations-es"]
     }
   ],
-  "packs": [{
-      "name": "brp-armor-es",
-      "label": "Armaduras",
-      "system": "brp",
-      "path": "packs/brp-armor-es.db",
+  "packs": [
+    {
+      "name": "standardSkill-es",
+      "label": "Habilidades básicas",
+      "path": "packs/standardskill-es.db",
       "type": "Item",
-      "private": false,
-      "flags": {},
-      "package": "fvtt-module-brp-es",
-      "absPath": "packs/brp-armor-es.db"
+      "package": "fvtt-module-mythras-es"
+    },
+    {
+      "name": "professionalSkill-es",
+      "label": "Habilidades profesionales",
+      "path": "packs/professionalskill-es.db",
+      "type": "Item",
+      "package": "fvtt-module-mythras-es"
+    },
+    {
+      "name": "humanoidHitLocations-es",
+      "label": "Localizaciones humanoides",
+      "path": "packs/humanoidHitLocations-es.db",
+      "type": "Item",
+      "package": "fvtt-module-mythras-es"
     }
   ],
   "url": "https://github.com/lozanoje/fvtt-module-mythras-es",
@@ -47,7 +58,7 @@
     "systems": [{
         "id": "mythras",
         "type": "system",
-        "compatibility": "2.2.3"
+        "compatibility": "2.2.5"
       }
     ],
     "requires": [{
